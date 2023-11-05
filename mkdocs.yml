@@ -1,0 +1,110 @@
+site_name: FuriousAPI
+site_description: 2 FastAPI 2 FuriousAPI ❤️ A powerful and flexible framework for building FastAPIs applications.
+site_author: nadobando
+site_url: https://nadobando.github.io/furiousapi
+repo_url: https://github.com/nadobando/furiousapi
+repo_name: nadobando/furiousapi
+
+theme:
+  logo: images/only-logo-contrast.png
+  name: 'material'
+  language: 'en'
+  palette:
+    - media: '(prefers-color-scheme: light)'
+      scheme: default
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/lightbulb
+        name: Switch to dark mode
+    - media: '(prefers-color-scheme: dark)'
+      scheme: slate
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to light mode
+  features:
+    - instant
+#    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.instant
+#    - navigation.top
+    - search.highlight
+    - search.share
+    - search.suggest
+    - search.indexes
+  icon:
+    repo: fontawesome/brands/github
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
+#plugins:
+#    - search
+#    - minify:
+#        minify_html: true
+
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - def_list
+
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.details
+
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+
+nav:
+  - Home: 'index.md'
+  - Installation: 'installation.md'
+  - Quick Start: 'quickstart.md'
+  - Tutorial: 'tutorial.md'
+  - API Guide:
+      - Introduction: 'api_guide/index.md'
+      - Views:
+        - Class Based Views: 'api_guide/cbv.md'
+        - ModelController: 'api_guide/model_controller.md'
+      - Repository: 'api_guide/index.md'
+      - SQL (SQLModel): 'api_guide/sqlmodel.md'
+      - MongoDB (Beanie): 'api_guide/beanie.md'
+      - ArangoDB (PydangORM): 'api_guide/pydangorm.md'
+
+##      - Class-based Views: 'api_guide/views.md'
+##      - Authentication and Permissions: 'api_guide/authentication.md'
+##      - Pagination: 'api_guide/pagination.md'
+##      - Throttling: 'api_guide/throttling.md'
+#      - Filtering: 'api_guide/filtering.md'
+#      - Testing: 'api_guide/testing.md'
+#  - Topics: 'topics.md'
+#  - Advanced Guide: 'advanced_guide.md'
+#  - API Reference: 'api_reference.md'
+  - Contributing: 'contributing.md'
+  - Release Notes: 'release_notes.md'
+  - Support: 'support.md'
+
