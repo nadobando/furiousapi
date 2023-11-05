@@ -40,4 +40,4 @@ jobs:
 
       - run: pip install mkdocs-material
 
-      - run: pip -m mkdocs gh-deploy --force
+      - run: mkdocs gh-deploy --force
